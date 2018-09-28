@@ -22,36 +22,47 @@ I recommend you to use [GitHub Desktop](https://desktop.github.com/) for this, a
 ### Cloning the repo
 
 #### ...with GitHub Desktop
+
 > TODO: @Gerd, add steps for GitHub Desktop
 
-> TODO: failed attempt of Jessica trying to explain how to do this on the command line... this is a bit long of a process to summarize as "simply do A, then execute B, you're done with C now..."
-<!-- #### ...with the command line
+#### ...with the command line
+
 If you want to experiment with the command line, go ahead, no one's stopping you.
-Search for and launch the Terminal application on you Mac, you will be greeted with Bash:
+launch the Terminal application on you Mac, you will be greeted with Bash:
 
-##### 1. check to make sure you have `git` installed.  
-  Type the following without `$`, the dollar sign is only there to signify the beginning of a command.
-  ```
-  $ which git
-  ```
-  If anything is printed, great, you can continue. Otherwise, you will need to [install `git`](https://codeburst.io/installing-git-for-the-first-time-on-mac-osx-bf9c513af2b8) first.
+##### 1. check you have `git` installed.
 
-##### 2. head to where you'd like to keep this project.  
-  You can do so by using the `cd`,  _change directory_, command. It allows you to navigate to anywhere in the file system. 
-  > note: directories are commonly refered to as folders
+Type the following without `$`, the dollar sign is there to signify the beginning of a command.
+for the below line you want to type `which git`.
+```bash
+$ which git
+```
 
-  Say I'd like to keep my project in `geek-force` folder in `Documents`, I can navigate there by:
-  ```
-  $ cd Documents/geek-force
-  ```
+If anything is printed, awesome, you can continue. Otherwise, you will need to [install `git`](https://codeburst.io/installing-git-for-the-first-time-on-mac-osx-bf9c513af2b8) first.
 
-##### 3. Now you can clone the repository from GitHub
-  
+##### 2. where'd you like to keep this project?
 
-- `ls` - _prints list of files in directory_  
-executing `ls`, it should print 
-- `pwd` - _print working directory_, tells you where you are -->
+Using the `cd`, _change directory_, command, you can navigate to anywhere in the file system. 
+> note: directories are commonly referred to as folders
 
+Say I'd like to keep my project in `geek-force` folder in `Documents`, I can navigate there by:
+```bash
+$ cd Documents/geek-force
+```
+
+You can check if you're in the right spot by asking the shell to _print the working directory_
+```bash
+$ pwd
+/Users/jessicawan/Document/geek-force
+```
+
+##### 3. clone the repository from GitHub
+
+you can clone this repository through `https`, exact URL can be found on its Github page:
+![find URL on webpage of github repo](./.asset/clone-repo-https.png)
+```bash
+$ git clone https://github.com/G33kF0rc3/hello-world.git
+```
 ---
 
 ### HTML Hello World
@@ -162,7 +173,7 @@ Some elements need not to have content to function, such as when embedding an im
 ```html
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png">
 ```
-In which case, only the opening tag is needed, serving as a placement anker.
+In which case, only the opening tag is needed, serving as a placement archor.
 
 ##### 3. attribute
 You also see that this tag has an attribute, which are extra information placed inside of the opening tag. Most attributes are specified in key-value pairs, the possibly keys vary depending on the specific element, and the value always have to be enclosed in `""`. Here we are specifying the source of the image to be embedded in in URL. 
